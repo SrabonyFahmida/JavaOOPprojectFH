@@ -1,4 +1,4 @@
-package Project007;
+package JavaOOPprojectFH;
 
 public class SimpleOrderService implements OrderService {
     @Override
