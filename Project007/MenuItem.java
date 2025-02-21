@@ -1,4 +1,4 @@
-package JavaOOPprojectFH;
+package Project007;
 
 public class MenuItem {
     private String name;
