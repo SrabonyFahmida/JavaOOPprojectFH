@@ -50,5 +50,11 @@ public class Main {
         orderService.placedOrder(menuItems.get(5));
     }
 
-
+    public static List<MenuItem> selectItemsFromMenu(Menu menu, List<Integer> selectedIndices) {
+        List<MenuItem> selectedItems = new ArrayList<>();
+        for (int index : selectedIndices) {
+            selectedItems.add(menu.getItems().get(index)); // POTENTIALLY UNSAFE
+        }
+        return selectedItems;
+    }
 }
