@@ -7,8 +7,11 @@ public class SimpleOrderService implements OrderService {
     }
     public double calculateTotal(List<MenuItem> items) {
         double total = 0;
+        if (items == null) return total;
         for (MenuItem item : items) {
-            total += item.getPrice(); // Will crash if item is null
+            if (item != null) {
+                total += item.getPrice();
+            }
         }
         return total;
     }
