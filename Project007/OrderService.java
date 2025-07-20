@@ -1,6 +1,7 @@
 package Project007;
 
-public interface OrderService {
+import java.util.*;
 
-    void placedOrder(MenuItem menuItem);
+public interface OrderService {
+    void placeOrder(List<MenuItem> items);
 }
