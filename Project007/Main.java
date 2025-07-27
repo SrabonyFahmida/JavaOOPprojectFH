@@ -1,40 +1,59 @@
 package Project007;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class Main {
+
     public static void main(String[] args) {
-        Menu menu = new Menu();
-        menu.addItem(new MenuItem("Coffee", 3.5));
-        menu.addItem(new MenuItem("Sandwich", 5.0));
-        menu.addItem(new MenuItem("Cake", 4.0));
+        List<MenuItem> menuItems = new ArrayList<>(
+                Arrays.asList(
+                        new MenuItem("Pizza", 10.0),
+                        new MenuItem("Burger", 15.0),
+                        new MenuItem("French Fries", 20.0),
+                        new MenuItem("Hot Dog", 25.0),
+                        new MenuItem("Pasta", 30.0),
+                        new MenuItem("Chicken", 35.0),
+                        new MenuItem("Fried Rice", 40.0),
+                        new MenuItem("Pizza", 50.0),
+                        new MenuItem("Burger", 55.0),
+                        new MenuItem("French Fries", 60.0),
+                        new MenuItem("Hot Dog", 65.0),
+                        new MenuItem("Pasta", 70.0),
+                        new MenuItem("Chicken", 75.0),
+                        new MenuItem("Fried Rice", 80.0),
+                        new MenuItem("Pizza", 90.0),
+                        new MenuItem("Burger", 95.0),
+                        new MenuItem("French Fries", 100.0),
+                        new MenuItem("Hot Dog", 105.0),
+                        new MenuItem("Pasta", 110.0),
+                        new MenuItem("Chicken", 115.0),
+                        new MenuItem("Fried Rice", 120.0)
+                )
+        );
+
+        menuItems.forEach(System.out::println);
 
         OrderService orderService = new SimpleOrderService();
 
-        // Simulated user input
-        List<Integer> selectedIndices = Arrays.asList(0, 2, 10); // includes an invalid index for testing
-        List<MenuItem> itemsToOrder = selectItemsFromMenu(menu, selectedIndices);
-
-        orderService.placeOrder(itemsToOrder);
+        orderService.placedOrder(menuItems.get(0));
+        orderService.placedOrder(menuItems.get(1));
+        orderService.placedOrder(menuItems.get(3));
+        orderService.placedOrder(menuItems.get(4));
+        orderService.placedOrder(menuItems.get(6));
+        orderService.placedOrder(menuItems.get(7));
+        orderService.placedOrder(menuItems.get(9));
+        orderService.placedOrder(menuItems.get(4));
+        orderService.placedOrder(menuItems.get(7));
+        orderService.placedOrder(menuItems.get(1));
+        orderService.placedOrder(menuItems.get(5));
     }
 
-<<<<<<< HEAD
     public static List<MenuItem> selectItemsFromMenu(Menu menu, List<Integer> selectedIndices) {
         List<MenuItem> selectedItems = new ArrayList<>();
         for (int index : selectedIndices) {
             selectedItems.add(menu.getItems().get(index)); // POTENTIALLY UNSAFE
-=======
-    // FIXED: selectItemsFromMenu now caches item list and checks bounds
-    public static List<MenuItem> selectItemsFromMenu(Menu menu, List<Integer> selectedIndices) {
-        List<MenuItem> selectedItems = new ArrayList<>();
-        List<MenuItem> allItems = menu.getItems();
-        for (int index : selectedIndices) {
-            if (index >= 0 && index < allItems.size()) {
-                selectedItems.add(allItems.get(index));
-            } else {
-                System.out.println("Warning: Invalid menu index " + index + " skipped.");
-            }
->>>>>>> 9a4701b (Fix: Improve selectItemsFromMenu() with bounds validation and list caching)
         }
         return selectedItems;
     }
