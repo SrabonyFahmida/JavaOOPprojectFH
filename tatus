@@ -1,0 +1,74 @@
+[33mcommit ac513f1732da84a7bdaf74a5e67a942dcfd38451[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: SrabonyFahmida <fahmida.4323@gmail.com>
+Date:   Sun Jul 20 04:37:55 2025 +0000
+
+    Fix: Improve selectItemsFromMenu() with bounds validation and list caching
+
+[33mcommit 46de20251441f90d0ac937275a00dbaedab1a492[m
+Author: SrabonyFahmida <fahmida.4323@gmail.com>
+Date:   Thu Jul 10 07:07:43 2025 +0000
+
+    Introduce unsafe selectItemsFromMenu() method without bounds checking
+
+[33mcommit f9e45d50b4a90cecdedad354a74de368d66e81bf[m
+Merge: 3f9a12d 8ac8965
+Author: Fahmida Hossain <35165269+SrabonyFahmida@users.noreply.github.com>
+Date:   Thu Jul 10 02:45:58 2025 -0400
+
+    Merge pull request #3 from pretty-little-baby/main
+    
+    Fix: Add null safety to calculateTotal() method in SimpleOrderService
+
+[33mcommit 8ac89652cf83bcc06c688c57881f2533a5fc359d[m
+Author: SrabonyFahmida <fahmida.4323@gmail.com>
+Date:   Thu Jul 10 05:51:29 2025 +0000
+
+    Fix: Add null safety to calculateTotal() method in SimpleOrderService
+
+[33mcommit 3f9a12d21307138e524d866b7321536ec64237d8[m
+Author: SrabonyFahmida <fahmida.4323@gmail.com>
+Date:   Thu Jul 10 02:21:21 2025 +0000
+
+    Introduce null safety bug in calculateTotal() method
+
+[33mcommit c31c4b59cce09e18dbb9035f0987cec86a728cac[m
+Author: SrabonyFahmida <fahmida.4323@gmail.com>
+Date:   Fri Feb 21 19:27:35 2025 +0000
+
+    adding folders
+
+[33mcommit 05e6a774c8325f4042fc3554fd4d049c6bacf9f4[m
+Author: SrabonyFahmida <fahmida.4323@gmail.com>
+Date:   Fri Feb 21 02:01:31 2025 +0000
+
+    Changing Package Name
+
+[33mcommit 2deb690ea6b069c6aa475746067c0ced2e0ee9e6[m
+Author: Fahmida Hossain <35165269+SrabonyFahmida@users.noreply.github.com>
+Date:   Thu Feb 20 19:38:56 2025 -0500
+
+    Create SimpleOrderService.java
+
+[33mcommit e5a5546baa3ab7584ed0e8b5d99b1b41aadd695a[m
+Author: Fahmida Hossain <35165269+SrabonyFahmida@users.noreply.github.com>
+Date:   Thu Feb 20 19:37:17 2025 -0500
+
+    Create OrderService.java
+
+[33mcommit 204d8246977503b35793c5827504e5a1dd334371[m
+Author: Fahmida Hossain <35165269+SrabonyFahmida@users.noreply.github.com>
+Date:   Thu Feb 20 19:35:39 2025 -0500
+
+    Create MenuItem.java
+
+[33mcommit e89722a6e31e814163a1cbcc4172ddc4a89991c3[m
+Author: Fahmida Hossain <35165269+SrabonyFahmida@users.noreply.github.com>
+Date:   Thu Feb 20 19:30:17 2025 -0500
+
+    Create Menu.java
+
+[33mcommit 54a2e1243a5de7a63a7e882a7a500ab108d267d8[m
+Author: Fahmida Hossain <35165269+SrabonyFahmida@users.noreply.github.com>
+Date:   Thu Feb 20 19:29:17 2025 -0500
+
+    Create Main.java
