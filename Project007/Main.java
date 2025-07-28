@@ -1,5 +1,8 @@
 package Project007;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.*;
 
 public class Main {
@@ -18,12 +21,6 @@ public class Main {
         orderService.placeOrder(itemsToOrder);
     }
 
-<<<<<<< HEAD
-    public static List<MenuItem> selectItemsFromMenu(Menu menu, List<Integer> selectedIndices) {
-        List<MenuItem> selectedItems = new ArrayList<>();
-        for (int index : selectedIndices) {
-            selectedItems.add(menu.getItems().get(index)); // POTENTIALLY UNSAFE
-=======
     // FIXED: selectItemsFromMenu now caches item list and checks bounds
     public static List<MenuItem> selectItemsFromMenu(Menu menu, List<Integer> selectedIndices) {
         List<MenuItem> selectedItems = new ArrayList<>();
@@ -34,7 +31,6 @@ public class Main {
             } else {
                 System.out.println("Warning: Invalid menu index " + index + " skipped.");
             }
->>>>>>> 9a4701b (Fix: Improve selectItemsFromMenu() with bounds validation and list caching)
         }
         return selectedItems;
     }
